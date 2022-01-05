@@ -1,15 +1,39 @@
 /* Add your code in each class */
 body {
+  background-color: rgb(31, 9, 49);
 }
 .container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 .movie-card {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  
 }
 .movie-image {
+  position: absolute;
+  object-fit:cover;
+  object-position: top;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
 }
 .movie-details-container {
+  height: 100%;
+  width: 100%;
 }
 .descriptions {
+  position: absolute;
+  bottom: 0%;
+  z-index: 1;
+  margin-left: 20px;
+  color: white;
 }
 
 /*A gift from us!*/
@@ -28,4 +52,8 @@ body {
   );
 }
 .movie-title {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font: bold;
+  margin: -1px;
 }
